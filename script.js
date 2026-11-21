@@ -583,6 +583,12 @@
     if (!carousel) return;
 
     const slides = Array.from(carousel.querySelectorAll(".story-slide"));
+    if (slides.length <= 1) {
+      if (slides[0]) slides[0].classList.add("is-active");
+      carousel.style.cursor = "default";
+      return;
+    }
+
     const dots = Array.from(document.querySelectorAll(".story-dot"));
     const prevBtn = document.getElementById("storyPrev");
     const nextBtn = document.getElementById("storyNext");

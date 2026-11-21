@@ -1187,6 +1187,10 @@ body:not(.is-locked) .chapter-rail {
   perspective: 900px;
 }
 
+.story-carousel:has(.story-slide:only-child) {
+  cursor: default;
+}
+
 .story-carousel:active {
   cursor: grabbing;
 }
