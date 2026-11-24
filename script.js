@@ -6,7 +6,7 @@
 (function () {
   "use strict";
 
-  const WEDDING_DATE_ISO = "2026-12-12T19:00:00+05:30";
+  const WEDDING_DATE_ISO = "2026-12-19T18:00:00+05:30";
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ------------------------------------------------------------------------
